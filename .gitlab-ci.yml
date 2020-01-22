@@ -7,7 +7,7 @@ compile_documentation:
   script:
     - apt-get update -qy
     - apt-get install -y python-pygments
-    - latexmk -pdf -shell-escape Prezentacija.tex
+    - latexmk -xelatex -pdf -shell-escape Prezentacija.tex
     - cp Prezentacija.pdf ..
   artifacts:
     paths:
